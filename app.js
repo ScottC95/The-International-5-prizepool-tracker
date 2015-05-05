@@ -16,13 +16,13 @@ $(document).ready(function() {
 			$nextTargetMoney.empty();
 			$nextTarget.empty();
 			$nextGoal.empty();
-			$total.append(format2(data.total, "$"));
-			$nextTargetMoney.append(format2(data.money_to_next, "$"));
-			$nextTarget.append(format2(data.next_target, "$"));
+			$total.append(convertUSD(data.total, "$"));
+			$nextTargetMoney.append(convertUSD(data.money_to_next, "$"));
+			$nextTarget.append(convertUSD(data.next_target, "$"));
 			$nextGoal.append(data.next_goal);
 		}
 	});
 });
-function format2(n, currency) {
+function convertUSD(n, currency) {
     return currency + Number(n).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
 }

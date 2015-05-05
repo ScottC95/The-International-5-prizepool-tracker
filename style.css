@@ -3,7 +3,7 @@ body{
 	padding: 0px;
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 13px;
-	color: #ba9e88;
+	color: #dbc73e;
 	background-color: rgb(60, 60, 60);
 	border-color: black;
 	text-shadow: 1px 1px 2px #000000;
@@ -20,7 +20,7 @@ h1, h2{
 	letter-spacing: 3px;
 }
 a:visited {
-    color: #ba9e88;
+    color: #dbc73e;
 }
 [class*='col-']{
 	float: left;
