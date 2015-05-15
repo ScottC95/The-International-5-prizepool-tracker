@@ -17,13 +17,13 @@ $(document).ready(function() {
 			$nextTarget.empty();
 			$nextGoal.empty();
 			$total.append(convertUSD(data.total, "$"));
-			$nextTargetMoney.append(convertUSD(data.money_to_next, "$") + " Left to Go until the " + data.next_goal);
+			$nextTargetMoney.append(convertUSD(data.money_to_next, "$") + " Left to go until the " + data.next_goal);
 			$nextTarget.append("Next target : " + convertUSD(data.next_target, "$"));
 			$nextGoal.append(data.next_goal);
 			var div = document.getElementsByClassName('nextGoal');
-			if (data.nextTarget == "9000000") {
+			if (data.next_target == "9000000") {
 				$('#Goal').css("background-image", "url('img/international2015_14.jpg')");
-			} else if(data.nextTarget == "100000000") {
+			} else if(data.next_target == "100000000") {
 				$('#Goal').css("background-image", "url('img/international2015_15.jpg')");
 			}
 			else if(data.next_target == "110000000") {
