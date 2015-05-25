@@ -17,28 +17,34 @@ $(document).ready(function() {
 			$nextTarget.empty();
 			$nextGoal.empty();
 			$total.append(convertUSD(data.total, "$"));
-			$nextTargetMoney.append(convertUSD(data.money_to_next, "$") + " Left to go until the " + data.next_goal);
+			if (data.next_target == "10000000") {
+				$nextTargetMoney.append(convertUSD(data.money_to_next, "$") + " Left to go until the Immortal Treasure III");
+			}
+			else{
+				$nextTargetMoney.append(convertUSD(data.money_to_next, "$") + " Left to go until the " + data.next_goal);
+			};
 			$nextTarget.append("Next target : " + convertUSD(data.next_target, "$"));
 			$nextGoal.append(data.next_goal);
 			var div = document.getElementsByClassName('nextGoal');
 			if (data.next_target == "9000000") {
 				$('#Goal').css("background-image", "url('img/international2015_14.jpg')");
-			} else if(data.next_target == "100000000") {
+			} 
+			else if(data.next_target == "10000000") {
 				$('#Goal').css("background-image", "url('img/international2015_15.jpg')");
 			}
-			else if(data.next_target == "110000000") {
+			else if(data.next_target == "11000000") {
 				$('#Goal').css("background-image", "url('img/international2015_16.jpg')");
 			}
-			else if(data.next_target == "120000000") {
+			else if(data.next_target == "12000000") {
 				$('#Goal').css("background-image", "url('img/international2015_17.jpg')");
 			}
-			else if(data.next_target == "130000000") {
+			else if(data.next_target == "13000000") {
 				$('#Goal').css("background-image", "url('img/international2015_18.jpg')");
 			}
-			else if(data.next_target == "140000000") {
+			else if(data.next_target == "14000000") {
 				$('#Goal').css("background-image", "url('img/international2015_19.jpg')");
 			}
-			else if(data.next_target == "150000000") {
+			else if(data.next_target == "15000000") {
 				$('#Goal').css("background-image", "url('img/international2015_20.jpg')");
 			}
 			else {
@@ -47,6 +53,7 @@ $(document).ready(function() {
 		}
 	});
 });
+
 function convertUSD(n, currency) {
     return currency + Number(n).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
 }
