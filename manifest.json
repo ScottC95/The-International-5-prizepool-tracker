@@ -1,0 +1,18 @@
+{		
+"name": "TI5 Prize pool Tracker",		
+"version": "2.4",		
+"manifest_version": 2,		
+"description": "Prizepool tracker for The International 5 dota event",		
+"content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js; object-src 'self'",		
+"permissions": ["http://pradneshpatil.com/dota2.php", "notifications"],		
+"icons": {		
+	"48": "icon.png",		
+	"128": "icon 128.png"		
+},		
+"browser_action": {		
+	"default_icon": "icon.png",		
+	"default_popup": "popup.html"		
+},
+//"options_page": "options.html",
+"background": { "scripts": ["js/background.js"] }
+}		
