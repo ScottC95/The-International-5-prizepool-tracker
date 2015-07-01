@@ -6,6 +6,7 @@ This is an extension for Google Chrome that displays the prize pool details of T
 The extension can be found [here](https://chrome.google.com/webstore/detail/ti5-prize-pool-tracker/fhcpapiijbekfnfjlhdplljkfoigmgpp). I would be very happy to recieve any feedback that you may have. 
 
 Here is a screenshot of the extension.
+
 ![alt tag](http://i.gyazo.com/82c18e06cb6995e2070eb71e057c59cc.png)
 
 ###What i am using
